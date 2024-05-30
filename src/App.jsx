@@ -6,16 +6,19 @@ import {
   FAQ,
   Footer,
 } from "./Component/MainFunction";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <MainContent />
-      <ProductSection />
-      <FAQ />
-      <Footer />
-    </div>
+    <ChakraProvider>
+      <div>
+        <Header />
+        <MainContent />
+        <ProductSection />
+        <FAQ />
+        <Footer />
+      </div>
+    </ChakraProvider>
   );
 }
 
